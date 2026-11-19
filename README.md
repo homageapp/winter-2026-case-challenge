@@ -6,7 +6,7 @@ A Node.js + TypeScript project using Express. Requires Node 26 or later.
 
 ```sh
 npm install
-npm start          # starts the server on http://localhost:3000
+npm start          # starts the server on http://localhost:3000 (needs MongoDB, see MONGO_URL)
 npm run typecheck  # type-checks the project with tsc
 ```
 
@@ -28,7 +28,9 @@ docker compose -f ops/docker-compose.yml up  # app on http://localhost:3000, Mon
 ├── docs/
 │   ├── cr profile.MD      # Care recipient profiles
 │   ├── cp profile.MD      # Care professional profiles
-│   └── assigned.MD        # Visits assigned so far
+│   └── visit.MD           # Visits (assigned and unassigned), SGT
+├── CONTRIBUTING.md
+├── SECURITY.md
 ├── package.json
 └── tsconfig.json
 ```
